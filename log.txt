@@ -1,0 +1,119 @@
+Array
+(
+    [method] => POST
+    [_method] => 
+    [uri] => /api.php/tasks/1
+    [input] => {"_method":"DELETE"}
+)
+Array
+(
+    [method] => POST
+    [_method] => DELETE
+    [uri] => /api.php/tasks/1
+    [input] => _method=DELETE
+)
+Array
+(
+    [method] => POST
+    [_method] => DELETE
+    [uri] => /api.php/tasks/1
+    [input] => _method=DELETE
+)
+Array
+(
+    [method] => POST
+    [_method] => PUT
+    [uri] => /api.php/tasks/2
+    [input] => _method=PUT&title=%D0%9E%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BE&description=%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5+%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5&status=done
+)
+Array
+(
+    [method] => POST
+    [_method] => PUT
+    [uri] => /api.php/tasks/2
+    [input] => _method=PUT&title=%D0%9E%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BE&description=%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5+%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5&status=done
+)
+Array
+(
+    [method] => POST
+    [_method] => PUT
+    [uri] => /api.php/tasks/2
+    [input] => _method=PUT&title=%D0%9E%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BE&description=%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5+%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5&status=done
+)
+Array
+(
+    [method] => POST
+    [_method] => PUT
+    [uri] => /api.php/tasks/2
+    [input] => _method=PUT&title=%D0%9E%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BE1&description=%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5+%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B51&status=done
+)
+Array
+(
+    [method] => POST
+    [_method] => PUT
+    [uri] => /api.php/tasks/2
+    [input] => _method=PUT&title=%D0%9E%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BE2&description=%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5+%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B52&status=done
+)
+Array
+(
+    [method] => POST
+    [_method] => PUT
+    [uri] => /api.php/tasks/2
+    [input] => _method=PUT&title=%D0%9E%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BE2&description=%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5+%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B52&status=done
+)
+Array
+(
+    [method] => POST
+    [_method] => PUT
+    [uri] => /api.php/tasks/2
+    [input] => _method=PUT&title=%D0%9E%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BE3&description=%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5+%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B53&status=done
+)
+Array
+(
+    [method] => POST
+    [_method] => 
+    [uri] => /api.php/tasks
+    [input] => title=%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F+%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B03&description=%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5+%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B83&status=open
+)
+Array
+(
+    [method] => POST
+    [_method] => 
+    [uri] => /api.php/tasks
+    [input] => title=%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F+%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B03&description=%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5+%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B83&status=open
+)
+Array
+(
+    [method] => POST
+    [_method] => 
+    [uri] => /api.php/tasks
+    [input] => title=%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F+%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0&description=%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5+%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8&status=open
+)
+Array
+(
+    [method] => POST
+    [_method] => 
+    [uri] => /api.php/tasks
+    [input] => title=%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F+%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B0&description=%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5+%D0%B7%D0%B0%D0%B4%D0%B0%D1%87%D0%B8&status=open
+)
+Array
+(
+    [method] => POST
+    [_method] => PUT
+    [uri] => /api.php/tasks/3
+    [input] => _method=PUT&title=%D0%9E%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%BE&description=%D0%9D%D0%BE%D0%B2%D0%BE%D0%B5+%D0%BE%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5&status=done
+)
+Array
+(
+    [method] => GET
+    [_method] => 
+    [uri] => /api.php/tasks/2
+    [input] => 
+)
+Array
+(
+    [method] => GET
+    [_method] => 
+    [uri] => /api.php/tasks
+    [input] => 
+)
