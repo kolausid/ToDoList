@@ -12,9 +12,12 @@ file_put_contents('log.txt', print_r([
 // получение и определение метода
 $method = $_SERVER['REQUEST_METHOD'];
 
+$input = file_get_contents('php://input');
+$data = json_decode($input, true);
+
 // Эмуляция методов PUT, DELETE через POST
-if ($method === 'POST' && isset($_POST['_method'])) {
-    $method = strtoupper($_POST['_method']);
+if ($method === 'POST' and isset($data['_method'])) {
+    $method = strtoupper($data['_method']);
 }
 
 //получаем путь и разбиваем, чтобы не использовать регулярки
@@ -44,7 +47,7 @@ if ($method === 'GET' and $uri === '/api.php/tasks') {
 // создание задачи /tasks
 if ($method === 'POST' and $uri === '/api.php/tasks') {
     //$data = json_decode(file_get_contents("php://input"), true);
-    parse_str(file_get_contents("php://input"), $data);
+    //parse_str(file_get_contents("php://input"), $data);
 
     // Валидация: все поля должны быть заполнены
     if (empty($data['title']) || empty($data['description']) || empty($data['status'])) {
@@ -92,7 +95,7 @@ if ($method === 'GET' and $segments[2] === 'tasks' and isset($segments[3])) {
 if ($method === 'PUT' and $segments[2] === 'tasks' and isset($segments[3])) {
     $taskId = (int)$segments[3];
     //$data = json_decode(file_get_contents("php://input"), true);
-    parse_str(file_get_contents("php://input"), $data);
+    //parse_str(file_get_contents("php://input"), $data);
 
     // Валидация: все поля должны быть заполнены
     if (empty($data['title']) || empty($data['description']) || empty($data['status'])) {

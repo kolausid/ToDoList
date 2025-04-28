@@ -117,3 +117,24 @@ Array
     [uri] => /api.php/tasks
     [input] => 
 )
+Array
+(
+    [method] => POST
+    [_method] => 
+    [uri] => /api.php/tasks/3
+    [input] => {"_method":"PUT","title":"","description":"Новое описание","status":"done"}
+)
+Array
+(
+    [method] => POST
+    [_method] => 
+    [uri] => /api.php/tasks/3
+    [input] => {"_method":"PUT","title":"Обновлено","description":"Новое описание","status":"done"}
+)
+Array
+(
+    [method] => POST
+    [_method] => 
+    [uri] => /api.php/tasks/2
+    [input] => {"_method":"PUT","title":"Обновлено","description":"Новое описание","status":"done"}
+)

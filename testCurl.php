@@ -4,23 +4,39 @@
 function sendRequest($url, $method = 'GET', $data = null) {
     $ch = curl_init();
 
-    if ($data !== null) {
-        // если данные — массив, превращаем в строку формата key=value
-        if (is_array($data)) {
-            $data = http_build_query($data);
-        }
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-    }
+    // if ($data !== null) {
+    //     // если данные — массив, превращаем в строку формата key=value
+    //     if (is_array($data)) {
+    //         $data = http_build_query($data);
+    //     }
+    //     curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+    // }
 
     curl_setopt_array($ch, [
         CURLOPT_URL => $url,
         CURLOPT_RETURNTRANSFER => true,
         CURLOPT_CUSTOMREQUEST => $method,
         CURLOPT_HTTPHEADER => [
-            'Content-Type: application/x-www-form-urlencoded', // если не JSON
+            'Content-Type: application/json',
             'Accept: application/json',
         ]
     ]);
+
+    if ($data !== null) {
+        $json = json_encode($data, JSON_UNESCAPED_UNICODE);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $json);
+    }
+    
+
+    // curl_setopt_array($ch, [
+    //     CURLOPT_URL => $url,
+    //     CURLOPT_RETURNTRANSFER => true,
+    //     CURLOPT_CUSTOMREQUEST => $method,
+    //     CURLOPT_HTTPHEADER => [
+    //         'Content-Type: application/x-www-form-urlencoded', // если не JSON
+    //         'Accept: application/json',
+    //     ]
+    // ]);
 
     $response = curl_exec($ch);
     curl_close($ch);
@@ -45,12 +61,12 @@ function sendRequest($url, $method = 'GET', $data = null) {
 //]);
 
 // PUT update task
-//sendRequest('http://todolist/api.php/tasks/3', 'POST', [
-//    '_method' => 'PUT',
-//    'title' => 'Обновлено',
-//    'description' => 'Новое описание',
-//    'status' => 'done'
-//]);
+sendRequest('http://todolist/api.php/tasks/2', 'POST', [
+   '_method' => 'PUT',
+   'title' => 'Обновлено',
+   'description' => 'Новое описание',
+   'status' => 'done'
+]);
 
 // DELETE task
 //sendRequest('http://todolist/api.php/tasks/1', [
